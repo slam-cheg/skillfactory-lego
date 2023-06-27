@@ -12,7 +12,7 @@
 	flex-direction: column;
 	margin: 0 auto;
 	height: 100%;
-    overflow: hidden;
+	overflow: hidden;
 
 	@media screen and (max-width: 1199px) {
 		max-width: 940px;
@@ -60,7 +60,7 @@
 }
 
 .dropdown__value {
-    width: calc(100% - 90px);
+	width: calc(100% - 90px);
 }
 
 .dropdown__list {
@@ -361,6 +361,11 @@
 	line-height: 120%;
 	opacity: 0.7;
 	width: calc(100% - 4.8vw - 78px);
+
+	@media screen and (max-width: 959px) {
+		margin: 12px 0 0 0;
+		width: 100%;
+	}
 }
 
 .accordion-item__list {
@@ -373,6 +378,11 @@
 	list-style: disc;
 	opacity: 0.7;
 	width: calc(100% - 4.8vw - 78px);
+
+		@media screen and (max-width: 959px) {
+		margin: 12px 0 0 0;
+		width: 100%;
+	}
 }
 
 .accordion-item__sublist {

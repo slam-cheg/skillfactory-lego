@@ -367,6 +367,12 @@
   opacity: 0.7;
   width: calc(100% - 4.8vw - 78px);
 }
+@media screen and (max-width: 959px) {
+  .accordeon-item__text {
+    margin: 12px 0 0 0;
+    width: 100%;
+  }
+}
 
 .accordion-item__list {
   margin: 12px 0 0 48px;
@@ -378,6 +384,12 @@
   list-style: disc;
   opacity: 0.7;
   width: calc(100% - 4.8vw - 78px);
+}
+@media screen and (max-width: 959px) {
+  .accordion-item__list {
+    margin: 12px 0 0 0;
+    width: 100%;
+  }
 }
 
 .accordion-item__sublist {
