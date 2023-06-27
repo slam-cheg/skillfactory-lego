@@ -11,13 +11,35 @@
 		<div class="page-wrapper">
 			<div class="two-columns">
 				<div class="buttons">
-					<button class="buttons__element buttons__element_active" id="developer">Разработка</button>
-					<button class="buttons__element" id="information-security">Информационная безопасность</button>
-					<button class="buttons__element" id="testing">Тестирование</button>
-					<button class="buttons__element" id="devops">DevOps</button>
-					<button class="buttons__element" id="data-science">Data Science</button>
-					<button class="buttons__element" id="data-analytics">Data Science</button>
-					<button class="buttons__element" id="mobile-apps">Мобильные приложения</button>
+					<div class="dropdown">
+						<p class="dropdown__value">Разработка</p>
+						<div class="dropdown__ico">
+							<svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg" fill="#EDFCED">
+								<g id="Group 94">
+									<rect id="Rectangle 21" x="2.41211" y="1.27979" width="14.5748" height="2" rx="1" transform="rotate(45 2.41211 1.27979)" />
+									<rect id="Rectangle 22" x="22.0205" y="2.30066" width="15" height="2" rx="1" transform="rotate(135 22.0205 2.30066)" />
+								</g>
+							</svg>
+						</div>
+					</div>
+					<ul class="dropdown__list">
+						<li class="dropdown__list-item" id="developer">Разработка</li>
+						<li class="dropdown__list-item" id="information-security">Информационная безопасность</li>
+						<li class="dropdown__list-item" id="testing">Тестирование</li>
+						<li class="dropdown__list-item" id="devops">DevOps</li>
+						<li class="dropdown__list-item" id="data-science">Data Science</li>
+						<li class="dropdown__list-item" id="data-analytics">Аналитика данных</li>
+						<li class="dropdown__list-item" id="mobile-apps">Мобильные приложения</li>
+					</ul>
+					<ul class="bullons__list">
+						<li><button class="buttons__element buttons__element_active" id="developer">Разработка</button></li>
+						<li><button class="buttons__element" id="information-security">Информационная безопасность</button></li>
+						<li><button class="buttons__element" id="testing">Тестирование</button></li>
+						<li><button class="buttons__element" id="devops">DevOps</button></li>
+						<li><button class="buttons__element" id="data-science">Data Science</button></li>
+						<li><button class="buttons__element" id="data-analytics">Аналитика данных</button></li>
+						<li><button class="buttons__element" id="mobile-apps">Мобильные приложения</button></li>
+					</ul>
 				</div>
 				<div class="accordions-wrapper">
 					<ul class="accordion accordion_active" id="developer">
@@ -33,8 +55,8 @@
 									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
 								</div>
 								<div class="switch">
-									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOWPF" data-tag="LEGOWPF" data-price="630" />
-									<label class="switch-label" for="LEGOWPF">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOWPF-desktop" data-tag="LEGOWPF" data-price="630" />
+									<label class="switch-label" for="LEGOWPF-desktop">
 										<div class="switch-inner"></div>
 										<div class="switch-click"></div>
 									</label>
@@ -56,6 +78,19 @@
 									<li class="accordion-item__list-item">Вопросы для подготовки к собеседованиям</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>630</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOWPF-mobile" data-tag="LEGOWPF" data-price="630" />
+									<label class="switch-label" for="LEGOWPF-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -69,8 +104,8 @@
 									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
 								</div>
 								<div class="switch">
-									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGONC" data-tag="LEGONC" data-price="930" />
-									<label class="switch-label" for="LEGONC">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGONC-desktop" data-tag="LEGONC" data-price="930" />
+									<label class="switch-label" for="LEGONC-desktop">
 										<div class="switch-inner"></div>
 										<div class="switch-click"></div>
 									</label>
@@ -95,6 +130,19 @@
 									<li class="accordion-item__list-item">Вопросы для подготовки к&nbsp;собеседованиям</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>930</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGONC-mobile" data-tag="LEGONC" data-price="930" />
+									<label class="switch-label" for="LEGONC-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -108,8 +156,8 @@
 									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
 								</div>
 								<div class="switch">
-									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBP" data-tag="LEGOBP" data-price="870" />
-									<label class="switch-label" for="LEGOBP">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBP-desktop" data-tag="LEGOBP" data-price="870" />
+									<label class="switch-label" for="LEGOBP-desktop">
 										<div class="switch-inner"></div>
 										<div class="switch-click"></div>
 									</label>
@@ -138,6 +186,19 @@
 									<li class="accordion-item__list-item">5&nbsp;мини-проектов по&nbsp;написанию программ на&nbsp;Python</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>870</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBP-mobile" data-tag="LEGOBP" data-price="870" />
+									<label class="switch-label" for="LEGOBP-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -145,14 +206,14 @@
 									<span class="accordion-item__plus-line accordion-item__plus-line_horisontal">&nbsp;</span>
 									<span class="accordion-item__plus-line accordion-item__plus-line_vertical">&nbsp;</span>
 								</div>
-								<h3 class="accordion-item__title">Бэкенд-разработка на Python и Django</h3>
+								<h3 class="accordion-item__title">Бэкенд-разработка на&nbsp;Python и&nbsp;Django</h3>
 								<div class="accordion-item__price">
 									<p class="accordion-item__price-value"><span>1&nbsp;340</span> Р/мес</p>
 									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
 								</div>
 								<div class="switch">
-									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBPD" data-tag="LEGOBPD" data-price="1340""/>
-									<label class="switch-label" for="LEGOBPD">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBPD-desktop" data-tag="LEGOBPD" data-price="1340""/>
+									<label class="switch-label" for="LEGOBPD-desktop">
 										<div class="switch-inner"></div>
 										<div class="switch-click"></div>
 									</label>
@@ -181,6 +242,19 @@
 									<li class="accordion-item__list-item">4&nbsp;проекта, например, парсер логов, веб-сервер, интернет магазин</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>1&nbsp;340</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBPD-mobile" data-tag="LEGOBPD" data-price="1340""/>
+									<label class="switch-label" for="LEGOBPD-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -194,8 +268,8 @@
 									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
 								</div>
 								<div class="switch">
-									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOJS" data-tag="LEGOJS" data-price="540" />
-									<label class="switch-label" for="LEGOJS">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOJS-desktop" data-tag="LEGOJS" data-price="540" />
+									<label class="switch-label" for="LEGOJS-desktop">
 										<div class="switch-inner"></div>
 										<div class="switch-click"></div>
 									</label>
@@ -218,6 +292,19 @@
 									<li class="accordion-item__list-item">70&nbsp;задач на&nbsp;верстку</li>
 									<li class="accordion-item__list-item">3&nbsp;проекта: сайт-визитка, верстка лендинга по&nbsp;макету, верстка мобильной версии</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>540</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOJS-mobile" data-tag="LEGOJS" data-price="540" />
+									<label class="switch-label" for="LEGOJS-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -252,6 +339,19 @@
 									<li class="accordion-item__list-item">Проект: система комментариев на&nbsp;JS + TypeScript</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>480</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOTS-mobile" data-tag="LEGOTS" data-price="480" />
+									<label class="switch-label" for="LEGOTS-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -279,6 +379,19 @@
 								<p class="accordeon-item__text">Основы планирования: уровни планирования, инструменты планирования, декомпозиция, оценка, блок-план и&nbsp;корректировка, важность фичи и&nbsp;уровни качества</p>
 								<p class="accordeon-item__text">Результат:</p>
 								<p class="accordeon-item__text">Познакомитесь с&nbsp;процессом проектирования новой игры. Узнаете об&nbsp;основных подходах, позволяющих придумать игру, которая будет пользоваться спросом. Разработаете дизайн-документ для вашей будущей игры.</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>610</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOGD-mobile" data-tag="LEGOGD" data-price="610" />
+									<label class="switch-label" for="LEGOGD-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -312,6 +425,19 @@
 								</ul>
 								<p class="accordeon-item__text">Результат: разработаете инструмент для визуализации и&nbsp;разбивки задач на&nbsp;этапы.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>690</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOPHPL-mobile" data-tag="LEGOPHPL" data-price="690" />
+									<label class="switch-label" for="LEGOPHPL-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -340,6 +466,19 @@
 									<li class="accordion-item__list-item">Управление артефактами</li>
 								</ul>
 								<p class="accordeon-item__text">Результат: разработаете удобный клиент для браузера, который позволит пользователям быстро вступать в&nbsp;диалог с&nbsp;зарегистрированными пользователями.</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>470</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOPHPBA-mobile" data-tag="LEGOPHPBA" data-price="470" />
+									<label class="switch-label" for="LEGOPHPBA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -379,6 +518,19 @@
 								</ul>
 								<p class="accordeon-item__text">Результат: настроите локальный сервер, научитесь обрабатывать формы и&nbsp;отправлять данные и&nbsp;файлы на&nbsp;сервер.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>620</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOPHPB-mobile" data-tag="LEGOPHPB" data-price="620" />
+									<label class="switch-label" for="LEGOPHPB-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -408,6 +560,19 @@
 									<li class="accordion-item__list-item">Тестирование приложения: PHPUnit, моки и&nbsp;стабы</li>
 								</ul>
 								<p class="accordeon-item__text">Результат: создадите галерею изображений с&nbsp;регистрацией и&nbsp;авторизацией пользователей, где можно будет загружать и&nbsp;сохранять файлы.</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>760</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOPHPA-mobile" data-tag="LEGOPHPA" data-price="760" />
+									<label class="switch-label" for="LEGOPHPA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -451,6 +616,19 @@
 									<li class="accordion-item__list-item">применять современный сетевой стек для пентеста и&nbsp;аудита безопасности</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>970</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOWP-mobile" data-tag="LEGOWP" data-price="970" />
+									<label class="switch-label" for="LEGOWP-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -490,6 +668,19 @@
 									<li class="accordion-item__list-item">работать с&nbsp;ОС&nbsp;Linux на&nbsp;уровне продвинутого пользователя</li>
 									<li class="accordion-item__list-item">настраивать безопасность системы</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>830</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOLOS-mobile" data-tag="LEGOLOS" data-price="830" />
+									<label class="switch-label" for="LEGOLOS-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -531,6 +722,19 @@
 								<ul class="accordion-item__list">
 									<li class="accordion-item__list-item">настраивать Active Directory, проводить атаки на&nbsp;AD и&nbsp;сетевые сервисы (для имитации действий злоумышленника), писать базовые скрипты на&nbsp;PowerShell и&nbsp;эскалировать привилегии в&nbsp;системе ОС&nbsp;Windows</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>900</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOWOS-mobile" data-tag="LEGOWOS" data-price="900" />
+									<label class="switch-label" for="LEGOWOS-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -577,6 +781,19 @@
 									<li class="accordion-item__list-item">использовать PowerShell Empire Framework</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>1 110</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBPP-mobile" data-tag="LEGOBPP" data-price="1110" />
+									<label class="switch-label" for="LEGOBPP-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 					</ul>
 					<ul class="accordion" id="testing">
@@ -602,6 +819,19 @@
 							<div class="accordion-item__content">
 								<p class="accordeon-item__text">После изучения этого блока вы&nbsp;закроете свои пробелы в&nbsp;знаниях теории тестирования, научитесь планировать свои тесты и&nbsp;заполнять соответствующую документацию. Научитесь разрабатывать тест-кейсы и&nbsp;чек-листы, которые помогут вам систематизировать дальнейшую работу, а&nbsp;также работать с&nbsp;баг-трекинговой системой Jira и&nbsp;оформлять найденные дефекты.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>900</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOFTT-mobile" data-tag="LEGOFTT" data-price="900" />
+									<label class="switch-label" for="LEGOFTT-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -624,6 +854,19 @@
 							</div>
 							<div class="accordion-item__content">
 								<p class="accordeon-item__text">После изучения данного блока вы&nbsp;сформируете базовые навыки тестирования веб-ресурса&nbsp;&mdash; UI-элементы и&nbsp;API. Это означает, что вы&nbsp;сможете тестировать как frontend-часть любого веб-сайта, так и&nbsp;его backend (если вам предоставлен доступ к&nbsp;документации).</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>790</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOBUI-mobile" data-tag="LEGOBUI" data-price="790" />
+									<label class="switch-label" for="LEGOBUI-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -659,6 +902,19 @@
 									</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>690</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGODEVLB-mobile" data-tag="LEGODEVLB" data-price="690" />
+									<label class="switch-label" for="LEGODEVLB-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -691,6 +947,19 @@
 								</ul>
 								<p class="accordeon-item__text">В&nbsp;результате изучения этих модулей вы&nbsp;получите практические навыки работы с&nbsp;Kubernetes и&nbsp;его основными инструментами, что позволит вам эффективно управлять приложениями и&nbsp;масштабировать их&nbsp;в&nbsp;облачной среде, используя передовые подходы и&nbsp;практики.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>1&nbsp;110</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGODEVMAK-mobile" data-tag="LEGODEVMAK" data-price="1110" />
+									<label class="switch-label" for="LEGODEVMAK-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -720,6 +989,19 @@
 									<li class="accordion-item__list-item">Научитесь использовать инструменты журналирования в&nbsp;Docker, а&nbsp;также инструменты Elasticsearch, Kibana и&nbsp;Logstash для обработки, хранения и&nbsp;анализа логов</li>
 								</ul>
 								<p class="accordeon-item__text">После завершения блока вы&nbsp;сможете работать с&nbsp;системами мониторинга и&nbsp;журналирования, производить анализ логов и&nbsp;диагностировать проблемы в&nbsp;работе приложений и&nbsp;инфраструктуры.</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>800</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGODEVMLO-mobile" data-tag="LEGODEVMLO" data-price="800" />
+									<label class="switch-label" for="LEGODEVMLO-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -757,6 +1039,19 @@
 								</ul>
 								<p class="accordeon-item__text">После окончания блока вы&nbsp;получите практические навыки работы с&nbsp;данными и&nbsp;моделями машинного обучения, а&nbsp;также сможете самостоятельно разрабатывать и&nbsp;оптимизировать модели для решения задач в&nbsp;различных областях.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>1&nbsp;050</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOMLI-mobile" data-tag="LEGOMLI" data-price="1050" />
+									<label class="switch-label" for="LEGOMLI-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -790,6 +1085,19 @@
 									<li class="accordion-item__list-item">использовать бустинг с&nbsp;использованием кластеризации/PCA на&nbsp;начальном этапе для улучшения качества модели</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>1&nbsp;160</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOMML-mobile" data-tag="LEGOMML" data-price="1160" />
+									<label class="switch-label" for="LEGOMML-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -816,6 +1124,19 @@
 									<li class="accordion-item__list-item">понимать основы Data Engineering и&nbsp;использовать современные инструменты для работы с&nbsp;данными, включая реляционные и&nbsp;NoSQL базы данных, Big Data-технологии, потоковую обработку данных и&nbsp;высокодоступные системы</li>
 									<li class="accordion-item__list-item">использовать облачные вычисления и&nbsp;хранилища данных для обработки больших объемов данных</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>450</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOIDT-mobile" data-tag="LEGOIDT" data-price="450" />
+									<label class="switch-label" for="LEGOIDT-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -846,6 +1167,19 @@
 									<li class="accordion-item__list-item">объяснять, какие алгоритмы оптимизации используются для обучения нейронных сетей и&nbsp;как их&nbsp;настраивать для повышения эффективности обучения</li>
 									<li class="accordion-item__list-item">применять методы Fine Tuning и&nbsp;Transfer Learning для улучшения эффективности обучения нейронных сетей на&nbsp;новых задачах</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>750</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOIDL-mobile" data-tag="LEGOIDL" data-price="750" />
+									<label class="switch-label" for="LEGOIDL-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -879,6 +1213,19 @@
 									<li class="accordion-item__list-item">выгружать данные из&nbsp;различных форматов файлов и&nbsp;получать данные из&nbsp;веб-источников и&nbsp;API с&nbsp;помощью библиотек requests, BeautifulSoup, и&nbsp;т.д.</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>900</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOPDA-mobile" data-tag="LEGOPDA" data-price="900" />
+									<label class="switch-label" for="LEGOPDA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 					</ul>
 					<ul class="accordion" id="data-analytics">
@@ -911,6 +1258,19 @@
 									<li class="accordion-item__list-item">оформлять данные, используя различные инструменты форматирования и&nbsp;стилей, чтобы сделать таблицы более наглядными и&nbsp;понятными для аудитории</li>
 									<li class="accordion-item__list-item">использовать Google Таблицы для загрузки данных из&nbsp;разных источников, включая файлы различных форматов и&nbsp;API, и&nbsp;обрабатывать эти данные для анализа</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>630</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOGTDA-mobile" data-tag="LEGOGTDA" data-price="630" />
+									<label class="switch-label" for="LEGOGTDA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -952,6 +1312,19 @@
 									<li class="accordion-item__list-item">провести базовый анализ в&nbsp;GS</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>970</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOGTC-mobile" data-tag="LEGOGTC" data-price="970" />
+									<label class="switch-label" for="LEGOGTC-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -986,6 +1359,19 @@
 								</ul>
 								<p class="accordeon-item__text">По&nbsp;окончании блока вы&nbsp;будете владеть основами языка SQL и&nbsp;сможете создавать запросы к&nbsp;базам данных, обрабатывать полученные данные и&nbsp;проводить простейший анализ данных.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>590</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOSQLB-mobile" data-tag="LEGOSQLB" data-price="590" />
+									<label class="switch-label" for="LEGOSQLB-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -1015,6 +1401,19 @@
 									<li class="accordion-item__list-item">использовать системные таблицы и&nbsp;проводить оптимизацию запросов для улучшения производительности СУБД</li>
 									<li class="accordion-item__list-item">реализовывать сложные задачи в&nbsp;SQL, такие как генерация отчетов и&nbsp;анализ больших объемов данных</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>540</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOSQLA-mobile" data-tag="LEGOSQLA" data-price="540" />
+									<label class="switch-label" for="LEGOSQLA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -1046,6 +1445,19 @@
 									<li class="accordion-item__list-item">как многопоточность и&nbsp;реактивные подходы помогают увеличить производительность приложения</li>
 								</ul>
 								<p class="accordeon-item__text">Результат: вы&nbsp;сможете писать многопоточный и&nbsp;асинхронный код, разрабатывать многопоточные или асинхронные приложения, увеличивать производительность и&nbsp;настраивать обмен данных по&nbsp;сети и&nbsp;с&nbsp;базой данных.</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>700</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOANDM-mobile" data-tag="LEGOANDM" data-price="700" />
+									<label class="switch-label" for="LEGOANDM-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -1083,6 +1495,19 @@
 									<li class="accordion-item__list-item">как писать транзакции в&nbsp;Room</li>
 								</ul>
 								<p class="accordeon-item__text">Результат: вы&nbsp;сможете реализовать запрос в&nbsp;БД, записать туда сведения и&nbsp;извлечь из&nbsp;них нужную информацию, научитесь использовать в&nbsp;своих проектах&nbsp;БД и&nbsp;переписывать проект с&nbsp;файлов на&nbsp;базу данных, а&nbsp;также сумеете создать свой DAO и&nbsp;описать запросы к&nbsp;базе данных.</p>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>520</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOANIS-mobile" data-tag="LEGOANIS" data-price="520" />
+									<label class="switch-label" for="LEGOANIS-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -1130,6 +1555,19 @@
 									Результат: вы&nbsp;научитесь внедрять зависимости через библиотеки и&nbsp;добавлять Gson- и&nbsp;Retrofit Gson-конвертер, а&nbsp;также работать с&nbsp;сетью в&nbsp;Android. Кроме того, вы&nbsp;сможете подбирать необходимый вариант построения архитектуры мобильного приложения, проектировать различные варианты построения архитектур мобильных приложений и&nbsp;внедрять зависимости через Dagger, Koin, Hilt.
 								</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>720</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOANMA-mobile" data-tag="LEGOANMA" data-price="720" />
+									<label class="switch-label" for="LEGOANMA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -1162,6 +1600,19 @@
 								</ul>
 								<p class="accordeon-item__text">Результат: настроите работу приложения в&nbsp;фоне и&nbsp;решите с&nbsp;его помощью различные задачи. Вы&nbsp;будете использовать Android-компоненты для работы в&nbsp;фоне и&nbsp;выстроите взаимодействие с&nbsp;другими приложениями и&nbsp;элементами устройства.</p>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>660</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOANWB-mobile" data-tag="LEGOANWB" data-price="660" />
+									<label class="switch-label" for="LEGOANWB-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -1191,6 +1642,19 @@
 									<li class="accordion-item__list-item">Создание, редактирование и&nbsp;воспроизведение мультимедиа</li>
 									<li class="accordion-item__list-item">Распределение элементов на&nbsp;экране, навигация между экранами</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>610</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOFS-mobile" data-tag="LEGOFS" data-price="610" />
+									<label class="switch-label" for="LEGOFS-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 						<li class="accordion-item">
@@ -1227,6 +1691,19 @@
 									<li class="accordion-item__list-item">Библиотеки WebKit и&nbsp;Safari Services</li>
 								</ul>
 							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>1&nbsp;110</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOIAA-mobile" data-tag="LEGOIAA" data-price="1110" />
+									<label class="switch-label" for="LEGOIAA-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
+							</div>
 						</li>
 						<li class="accordion-item">
 							<div class="accordion-item__header">
@@ -1259,6 +1736,19 @@
 									<li class="accordion-item__list-item">Сериализация и&nbsp;десериализация данных вручную и&nbsp;с&nbsp;помощью библиотек</li>
 									<li class="accordion-item__list-item">Получение и&nbsp;отправка JSON-объектов</li>
 								</ul>
+							</div>
+							<div class="accordion-item__footer">
+								<div class="accordion-item__price">
+									<p class="accordion-item__price-value"><span>750</span> Р/мес</p>
+									<span class="accordion-item__price-description">При рассрочке на 36 мес</span>
+								</div>
+								<div class="switch">
+									<input type="checkbox" name="switch" class="switch-checkbox" id="LEGOWN-mobile" data-tag="LEGOWN" data-price="750" />
+									<label class="switch-label" for="LEGOWN-mobile">
+										<div class="switch-inner"></div>
+										<div class="switch-click"></div>
+									</label>
+								</div>
 							</div>
 						</li>
 					</ul>

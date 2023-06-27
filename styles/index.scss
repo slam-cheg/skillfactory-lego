@@ -30,13 +30,126 @@
 	display: grid;
 	grid-template-columns: 270px auto;
 	column-gap: 24px;
+
+	@media screen and (max-width: 959px) {
+		grid-template-columns: 1fr;
+		row-gap: 10px;
+	}
+}
+
+.dropdown {
+	transition: 0.3s;
+	border-radius: 10px;
+	border: 1px solid transparent;
+	background: #5b5b5b;
+	color: #edfced;
+	text-align: center;
+	font-size: 16px;
+	font-family: Rubik;
+	line-height: 120%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	@media screen and (max-width: 959px) {
+		display: flex;
+	}
+}
+
+.dropdown__value {
+    width: calc(100% - 90px);
+}
+
+.dropdown__list {
+	border-radius: 10px;
+	background: #5b5b5b;
+	list-style: none;
+	margin: 0;
+	padding: 16px 15px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	top: 64px;
+	z-index: 10;
+}
+
+.dropdown__list-item {
+	color: #f4f4f4;
+	text-align: center;
+	font-size: 16px;
+	font-family: Rubik;
+	line-height: 120%;
+	padding: 10px 0;
+	width: 100%;
+	border-bottom: 1px solid rgb(240 240 240 / 10%);
+
+	&:first-of-type {
+		padding-top: 0;
+	}
+	&:last-of-type {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}
+
+.dropdown__ico {
+	position: absolute;
+	right: 15px;
+	transform: rotate(0);
+	transition: 0.3s;
+
+	svg {
+		transition: 0.3s;
+		fill: #edfced;
+	}
+}
+
+.dropdown_opened {
+	color: #5b5b5b;
+	border: 1px solid #5b5b5b;
+	background: #edfced;
+	transition: 0.3s;
+	& ~ .dropdown__list {
+		display: flex;
+	}
+	& > .dropdown__ico {
+		transform: rotate(180deg);
+		transition: 0.3s;
+
+		svg {
+			transition: 0.3s;
+			fill: #5b5b5b;
+		}
+	}
 }
 
 .buttons {
+	position: relative;
 	width: 100%;
-	display: flex;
+
+	@media screen and (max-width: 959px) {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+}
+
+.bullons__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
 	flex-direction: column;
 	row-gap: 20px;
+	display: flex;
+
+	@media screen and (max-width: 959px) {
+		display: none;
+	}
 }
 
 .buttons__element {
@@ -129,6 +242,29 @@
 	grid-template-columns: 24px 4.5fr 1fr 78px;
 	gap: 24px;
 	cursor: pointer;
+
+	@media screen and (max-width: 1199px) {
+		grid-template-columns: 24px 2.5fr 1fr 78px;
+	}
+
+	@media screen and (max-width: 959px) {
+		grid-template-columns: 24px auto;
+
+		.accordion-item__price,
+		.switch {
+			display: none;
+		}
+	}
+}
+
+.accordion-item__footer {
+	display: none;
+	justify-content: space-between;
+	margin-top: 15px;
+
+	@media screen and (max-width: 959px) {
+		display: flex;
+	}
 }
 
 .accordion-item__plus {

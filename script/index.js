@@ -3,7 +3,27 @@ const accordionsWrapper = container.querySelector(".accordions-wrapper");
 const buttons = container.querySelectorAll(".buttons__element");
 const accordions = container.querySelectorAll(".accordion");
 const accordionsHeaders = container.querySelectorAll(".accordion-item__header");
-const checkBoxes = container.querySelectorAll(".accordion-item__checkbox");
+const dropdown = container.querySelector(".dropdown");
+const dropdownValue = dropdown.querySelector(".dropdown__value");
+const dropdownBtns = container.querySelectorAll(".dropdown__list-item");
+
+dropdown.addEventListener("click", toggleDropdown);
+
+dropdownBtns.forEach((btn) => {
+	
+	btn.addEventListener("click", () => {
+		accordions.forEach((accordion) => {
+			accordion.classList.remove("accordion_active");
+		});
+		accordions.forEach((accordion) => {
+			if (accordion.id === btn.id) {
+				accordion.classList.add("accordion_active");
+			}
+		});
+		dropdownValue.textContent = btn.textContent;
+		toggleDropdown();
+	});
+});
 
 buttons.forEach((btn) => {
 	btn.addEventListener("click", () => {
@@ -32,8 +52,6 @@ accordionsHeaders.forEach((btn) => {
 	});
 });
 
-checkBoxes.forEach((chkBox) => {
-	chkBox.addEventListener("click", () => {
-		chkBox.classList.toggle("accordion-item__checkbox_checked");
-	});
-});
+function toggleDropdown() {
+	dropdown.classList.toggle("dropdown_opened");
+}
