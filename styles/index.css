@@ -17,6 +17,8 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
 }
 @media screen and (max-width: 1199px) {
   .page-wrapper {
@@ -210,6 +212,7 @@
   transition: 0.5s;
 }
 .accordion_active {
+  position: relative;
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
