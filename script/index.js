@@ -2,7 +2,7 @@ const container = document.querySelector(".page-wrapper");
 const accordionsWrapper = container.querySelector(".accordions-wrapper");
 const buttons = container.querySelectorAll(".buttons__element");
 const accordions = container.querySelectorAll(".accordion");
-const plusButtons = container.querySelectorAll(".accordion-item__plus");
+const accordionsHeaders = container.querySelectorAll(".accordion-item__header");
 const checkBoxes = container.querySelectorAll(".accordion-item__checkbox");
 
 buttons.forEach((btn) => {
@@ -26,9 +26,9 @@ buttons.forEach((btn) => {
 	});
 });
 
-plusButtons.forEach((btn) => {
+accordionsHeaders.forEach((btn) => {
 	btn.addEventListener("click", () => {
-		btn.parentElement.parentElement.classList.toggle("accordion-item_opened");
+		btn.parentElement.classList.toggle("accordion-item_opened");
 	});
 });
 
