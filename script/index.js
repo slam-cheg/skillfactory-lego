@@ -10,8 +10,8 @@ const dropdownBtns = container.querySelectorAll(".dropdown__list-item");
 dropdown.addEventListener("click", toggleDropdown);
 
 dropdownBtns.forEach((btn) => {
-	
 	btn.addEventListener("click", () => {
+		debugger;
 		accordions.forEach((accordion) => {
 			accordion.classList.remove("accordion_active");
 		});
