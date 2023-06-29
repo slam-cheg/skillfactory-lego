@@ -216,6 +216,7 @@
 
 .accordions-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .accordion {
