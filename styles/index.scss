@@ -1,4 +1,3 @@
-@import "./tilda-reset.scss";
 @import "../fonts/index.scss";
 
 * {
@@ -134,6 +133,7 @@
 
 	@media screen and (max-width: 959px) {
 		display: flex;
+		min-height: 45px;
 	}
 }
 
@@ -403,7 +403,7 @@
 	width: calc(100% - 4.8vw - 78px);
 
 	@media screen and (max-width: 959px) {
-		margin: 0;
+		margin: 12px 0 0 0;
 		width: 100%;
 	}
 }
@@ -423,6 +423,10 @@
 		margin: 12px 0 0 0;
 		width: 100%;
 	}
+}
+
+.accordion-item__list-item {
+    margin: 12px 0 0 0;
 }
 
 .accordion-item__sublist {
