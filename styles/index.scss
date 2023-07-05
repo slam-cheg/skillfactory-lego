@@ -215,15 +215,21 @@
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	position: absolute;
-	transition: 0.5s;
+	position: relative;
+	transition: opacity .3s, visibility 0s;
 
 	&_active {
-		position: relative;
 		visibility: visible;
 		opacity: 1;
 		pointer-events: auto;
+		transition: opacity .3s, visibility 0s .3s;
 	}
+
+	&_hidden {
+		display: none;
+	}
+
+
 }
 
 .accordion-item {

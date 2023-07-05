@@ -13,10 +13,17 @@ dropdownBtns.forEach((btn) => {
 	btn.addEventListener("click", () => {
 		accordions.forEach((accordion) => {
 			accordion.classList.remove("accordion_active");
+			setTimeout(() => {
+				accordion.classList.add("accordion_hidden");
+			}, 320);
 		});
 		accordions.forEach((accordion) => {
 			if (accordion.id === btn.id) {
+				setTimeout(() => {
+					accordion.classList.remove("accordion_hidden");
+				}, 320);
 				accordion.classList.add("accordion_active");
+				
 			}
 		});
 		dropdownValue.textContent = btn.textContent;
